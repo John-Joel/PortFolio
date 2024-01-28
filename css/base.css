@@ -1,0 +1,262 @@
+/*
+This file is made by Frenify (2020)
+
+01) BASE
+02) FORM ELEMENTS
+03) SKELETON OR GRID
+
+
+*/
+
+/*------------------------------------------------------------------*/
+/*	01) BASE
+/*------------------------------------------------------------------*/
+
+ul,
+ol {
+	margin: 0px;
+}
+
+ul li,
+ol li {
+	margin: 0px;
+}
+
+img {
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+a,
+i {
+	border: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 600;
+	line-height: 1.4;
+	font-family: "Raleway";
+	color: #000;
+}
+
+h1 {
+	font-size: 45px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 30px;
+}
+
+h4 {
+	font-size: 24px;
+}
+
+h5 {
+	font-size: 20px;
+}
+
+h6 {
+	font-size: 16px;
+}
+
+/*------------------------------------------------------------------*/
+/*	02) FORM ELEMENTS
+/*------------------------------------------------------------------*/
+
+textarea {
+	border-radius: 0;
+	font-size: 13px;
+	resize: vertical;
+	font-family: "Raleway";
+	letter-spacing: 1.2px;
+
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	-ms-box-sizing: border-box;
+	/* IE 10 + */
+	box-sizing: border-box;
+	/* Opera/IE 8+ */
+
+	line-height: 1.4;
+	padding: 10px;
+	width: 100%;
+	border: 1px solid #eee;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+input[type="text"],
+input[type="email"],
+.uneditable-input {
+	border-radius: 0;
+	font-size: 13px;
+	min-width: auto;
+	letter-spacing: 1.4px;
+
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Raleway";
+
+	line-height: 1.6;
+	padding: 10px;
+	height: 44px;
+	vertical-align: middle;
+	border: 1px solid #eee;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+textarea:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+.uneditable-input:focus {
+	border-color: #ccc;
+	background: #eee;
+}
+
+input[type="submit"] {
+	padding: 13px 15px;
+	height: 40px;
+	line-height: 1;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: 600;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+	border: none;
+	cursor: pointer;
+	color: #FFF;
+	background: #777;
+
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+input[type="submit"]:hover {
+	background: #444;
+}
+
+select {
+	padding: 8px;
+	border: 2px solid #eee;
+}
+
+input[type="button"] {
+	cursor: pointer;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-ms-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+
+/*------------------------------------------------------------------*/
+/*	04) SKELETON OR GRID
+/*------------------------------------------------------------------*/
+
+.container {
+	max-width: 1250px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	padding: 0px 40px;
+	position: relative;
+	clear: both;
+
+	-webkit-box-sizing: border-box;
+	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;
+	/* Firefox, other Gecko */
+	box-sizing: border-box;
+	/* Opera/IE 8+ */
+}
+
+.row {
+	height: auto;
+}
+
+@media (max-width: 1040px) {
+	.container {
+		padding: 0px 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.container {
+		padding: 0px 10px;
+	}
+}
+
+::-webkit-input-placeholder {
+	/* WebKit, Blink, Edge */
+	color: #6f6f6f;
+}
+
+:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #6f6f6f;
+	opacity: 1;
+}
+
+::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #6f6f6f;
+	opacity: 1;
+}
+
+:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #6f6f6f;
+}
+
+::-ms-input-placeholder {
+	/* Microsoft Edge */
+	color: #6f6f6f;
+}
+
+::placeholder {
+	/* Most modern browsers support this now. */
+	color: #6f6f6f;
+}
+
+.clearfix,
+.clearfix:after {
+	clear: both
+}
+
+.clearfix:after,
+.clearfix:before {
+	display: table;
+	line-height: 0;
+	content: "";
+}
